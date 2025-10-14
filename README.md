@@ -31,17 +31,12 @@ Clone this repository first:
 ```bash
 git clone https://github.com/arjaymarinas/philgeps-bid-docs-automation.git
 cd <your-repo>
-```
-------------------------------------------------------
-
-### 3. Install Dependencies
-```
 pip install -r requirements.txt
 playwright install chromium
 ```
 ------------------------------------------------------
 
-### 4. Database Connection
+### 3. Database Connection
 ``` python
 DB_CONFIG = {
     "server": "YOUR_SERVER_NAME",
@@ -57,7 +52,7 @@ DB_CONFIG = {
 
 ------------------------------------------------------
 
-### 5. Verify installation
+### 4. Verify installation
 ``` bash
 python extract_bid_docs.py
 ```
@@ -74,7 +69,7 @@ To exit, just press Enter when asked for a RefID.
 
 ------------------------------------------------------
 
-### 6. Output: All generated PDFs are saved inside:
+### 5. Output: All generated PDFs are saved inside:
 ExtractedBidDocs/
    ├── 7793173/
    │   ├── bid_notice_abstract.pdf
@@ -82,6 +77,21 @@ ExtractedBidDocs/
    │   ├── Bid Supplements/
    │   ├── Award/
    │   └── IMPORTANT-NOTES.txt
+
+------------------------------------------------------
+
+### 6. Copy "ms-playwright" folder 
+- From C:\Users\<your-user>\AppData\Local\ and copy the "ms-playwright" and paste it to your local repository's root folder
+- Your repo's root folder will now look like this:
+Your-repo-folder/
+   ├── ms-playwright
+   │   ├── <subdirectory>
+   │   ├── <subdirectory>
+   │   ├── <subdirectory>
+   │   ├── ****
+   ├── extract_bid_docs.py
+   ├── README.md
+   ├── requirements.txt
 
 ------------------------------------------------------
 
@@ -106,7 +116,7 @@ extract_bid_docs_training_v2.py
 
 ------------------------------------------------------
 
-### 7. Run the .exe
+### 8. Run the .exe
 - After the build completes, you’ll find the .exe file inside the dist folder:
 ``` dist/extract_bid_docs_training_v2.exe ```
 - You can now share this single .exe file with your colleagues — no need to install Python or Playwright or any other dependencies manually.
