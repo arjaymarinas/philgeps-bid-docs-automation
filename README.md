@@ -103,7 +103,7 @@ pip install pyinstaller
 
 - Run this full command (copy & paste):
 ```
-pyinstaller --onefile ^
+pyinstaller --onefile --noconsole ^
 --add-data "ms-playwright;ms-playwright" ^
 --hidden-import playwright.sync_api ^
 --hidden-import playwright._impl._connection ^

@@ -1,0 +1,7 @@
+creds.txt
+bulk-release-build.py
+*.spec
+ms-playwright/
+ExtractedBidDocs/
+dist/
+build/
