@@ -24,11 +24,11 @@ page = None
 # APP CONFIG
 # -------------------------------
 DB_CONFIG = {
-    "server": "13.76.134.173",
-    "database": "GEPSDB",
-    "username": "gepsdb",
-    "password": "$dmd123",
-    "driver": "{ODBC Driver 17 for SQL Server}"
+    "server": "",
+    "database": "",
+    "username": "",
+    "password": "",
+    "driver": ""
 }
 
 GEPS_URL = {
